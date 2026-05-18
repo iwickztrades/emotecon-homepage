@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EmoteCon | Interactive Stream Events</title>
+    <meta
+      name="description"
+      content="EmoteCon turns live streams into neon esports arenas with crowd reactions, creator battles, and interactive broadcast moments."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500;600;700;800;900&family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="site-shell">
+      <header class="topbar" aria-label="Primary navigation">
+        <a class="brand-mark" href="#top" aria-label="EmoteCon home">
+          <img src="assets/emotecon-logo.png" alt="">
+          <span>EmoteCon</span>
+        </a>
+        <nav class="nav-links" aria-label="Site sections">
+          <a href="#arena">Arena</a>
+          <a href="#lineup">Lineup</a>
+          <a href="#schedule">Schedule</a>
+          <a href="#access">Access</a>
+        </nav>
+        <a class="nav-cta" href="#access">Join the Stream</a>
+      </header>
+
+      <main id="top">
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="arena-rig" aria-hidden="true">
+            <span class="beam beam-one"></span>
+            <span class="beam beam-two"></span>
+            <span class="beam beam-three"></span>
+            <span class="beam beam-four"></span>
+          </div>
+
+          <div class="confetti-field" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+
+          <div class="hero-grid">
+            <div class="hero-copy">
+              <p class="eyebrow">Interactive stream events</p>
+              <h1 id="hero-title">The arena goes live when the chat takes control.</h1>
+              <p class="hero-lede">
+                Creator battles, live polls, emote storms, and audience-triggered moments built
+                for streams that feel loud, electric, and impossible to ignore.
+              </p>
+              <div class="hero-actions" aria-label="Event actions">
+                <a class="button button-primary" href="#access">Reserve a Pass</a>
+                <a class="button button-secondary" href="#arena">Enter the Arena</a>
+              </div>
+              <div class="live-strip" aria-label="Live event stats">
+                <span><strong data-count="128">128K</strong> live reactions</span>
+                <span><strong data-count="42">42</strong> featured creators</span>
+                <span><strong data-count="8">8</strong> main events</span>
+              </div>
+            </div>
+
+            <div class="hero-stage" aria-label="EmoteCon neon arena brand art">
+              <div class="stage-halo"></div>
+              <img src="assets/emotecon-logo.png" alt="EmoteCon interactive stream events logo">
+              <div class="reaction-orbit" aria-hidden="true">
+                <span class="reaction reaction-a">GG</span>
+                <span class="reaction reaction-b">HYPE</span>
+                <span class="reaction reaction-c">+1</span>
+                <span class="reaction reaction-d">WOW</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="crowd" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </section>
+
+        <section class="signal-band" aria-label="Live ticker">
+          <div class="ticker">
+            <span>Neon creator battles</span>
+            <span>Audience-triggered powerups</span>
+            <span>Streamer vs chat finales</span>
+            <span>Live emote storms</span>
+            <span>Co-stream watch parties</span>
+          </div>
+        </section>
+
+        <section class="section arena-section" id="arena" aria-labelledby="arena-title">
+          <div class="section-heading">
+            <p class="eyebrow">Built like a broadcast stage</p>
+            <h2 id="arena-title">Every moment reacts to the crowd.</h2>
+            <p>
+              EmoteCon layers livestream mechanics over a futuristic esports show floor: glowing
+              stage cues, instant votes, shared reaction bursts, and creator challenges that shift
+              as the audience moves.
+            </p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <span class="feature-icon">01</span>
+              <h3>Chat-powered moments</h3>
+              <p>Votes, reactions, and emote drops change what appears on stream in real time.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-icon">02</span>
+              <h3>Creator showdowns</h3>
+              <p>Head-to-head events, remix rounds, and audience-selected twists keep energy high.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-icon">03</span>
+              <h3>Arena lighting system</h3>
+              <p>Neon purple, cyan, and hot pink cues make each segment feel like a main-stage reveal.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section reaction-lab" aria-labelledby="reaction-title">
+          <div>
+            <p class="eyebrow">Live control room</p>
+            <h2 id="reaction-title">Send the next wave.</h2>
+            <p>
+              Tap a reaction to charge the arena meter and preview how the broadcast responds when
+              the crowd piles in at once.
+            </p>
+          </div>
+          <div class="lab-console">
+            <div class="meter" aria-label="Arena charge meter">
+              <div class="meter-fill"></div>
+            </div>
+            <div class="reaction-buttons" aria-label="Audience reactions">
+              <button type="button" data-reaction="HYPE">HYPE</button>
+              <button type="button" data-reaction="LOL">LOL</button>
+              <button type="button" data-reaction="GG">GG</button>
+              <button type="button" data-reaction="WOW">WOW</button>
+            </div>
+            <div class="chat-window" aria-live="polite">
+              <p><strong>Chat:</strong> final round unlocked</p>
+              <p><strong>Host:</strong> arena charge at <span class="charge-value">72</span>%</p>
+              <p class="chat-output"><strong>Crowd:</strong> HYPE wave ready</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section lineup-section" id="lineup" aria-labelledby="lineup-title">
+          <div class="section-heading">
+            <p class="eyebrow">Featured lanes</p>
+            <h2 id="lineup-title">Streams with main-event energy.</h2>
+          </div>
+          <div class="lineup-grid">
+            <article>
+              <span>Creator Clash</span>
+              <h3>Creator vs creator with chat wildcards</h3>
+              <p>Audience-selected challenges drop between rounds, forcing instant pivots.</p>
+            </article>
+            <article>
+              <span>Emote Royale</span>
+              <h3>The crowd builds the scoreboard</h3>
+              <p>Every reaction pushes teams up the board during timed hype windows.</p>
+            </article>
+            <article>
+              <span>Afterglow Sessions</span>
+              <h3>Late-night community rooms</h3>
+              <p>Smaller stages for watch parties, Q&A, speedruns, and creator hangouts.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section schedule-section" id="schedule" aria-labelledby="schedule-title">
+          <div class="section-heading">
+            <p class="eyebrow">Main stage schedule</p>
+            <h2 id="schedule-title">A full night of live triggers.</h2>
+          </div>
+          <div class="schedule">
+            <article>
+              <time datetime="18:00">6:00 PM</time>
+              <div>
+                <h3>Opening Hype Storm</h3>
+                <p>Logo reveal, arena ignition, live emote flood, and creator walk-ons.</p>
+              </div>
+            </article>
+            <article>
+              <time datetime="19:15">7:15 PM</time>
+              <div>
+                <h3>Chat Takes the Controller</h3>
+                <p>Viewers vote in modifiers while creators race through stream challenges.</p>
+              </div>
+            </article>
+            <article>
+              <time datetime="20:45">8:45 PM</time>
+              <div>
+                <h3>Neon Finale</h3>
+                <p>Reaction meter decides the last twist before the championship round.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="access-section" id="access" aria-labelledby="access-title">
+          <div class="access-copy">
+            <p class="eyebrow">Go live with the crowd</p>
+            <h2 id="access-title">Reserve your EmoteCon stream pass.</h2>
+            <p>
+              Get the live link, creator drops, and the reaction controls before the arena opens.
+            </p>
+          </div>
+          <form class="signup-form" aria-label="Reserve a stream pass">
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" placeholder="you@example.com" required>
+            </label>
+            <button class="button button-primary" type="submit">Lock In</button>
+            <p class="form-note" role="status">Next drop opens soon.</p>
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
